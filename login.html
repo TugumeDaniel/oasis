@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Auth - Oasis</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -29,21 +29,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-uppercase section-heading">Registration Form</h2>
-                    <h3 class="text-muted section-subheading">Fill this form to join this platform</h3>
+                    <h2 class="text-uppercase section-heading">Authentication Form</h2>
+                    <h3 class="text-muted section-subheading">Fill this form to access this platform</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <form id="contactForm" method="post" action="blogs.html" name="contactForm" novalidate="novalidate">
+                <div class="col-lg-30">
+                    <form id="contactForm" method="post" action="auth.php" name="loginForm" novalidate="novalidate">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group mb-3"><input class="form-control" type="email" id="email" placeholder="Email Address" required=""><small class="form-text text-danger help-block lead"></small></div>
-                                <div class="form-group mb-3"><input class="form-control" type="password" id="password" placeholder="Key" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="email" name="email" id="email" placeholder="Email Address" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group mb-3"><input class="form-control" type="password" name="pass" id="password" placeholder="Key" required=""><small class="form-text text-danger help-block lead"></small></div>
                             </div>
                             <div class="w-100"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="login" type="submit">GET IN</button>
+                            <div class="col-lg-12 text-left">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" name="loginBtn" id="login" type="submit">GET IN</button>
                             </div>
                         </div>
                     </form>
